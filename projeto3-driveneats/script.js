@@ -1,3 +1,6 @@
+let painel =document.querySelector(".painel");
+painel.classList.add("escondido");
+
 
 function addborda(elemento , selecao){
     const click=document.querySelector(`.${selecao} .borda`);
@@ -7,15 +10,18 @@ function addborda(elemento , selecao){
     elemento.classList.add("borda");
 
     addicone(elemento, selecao);
-
-   if (selecao==="pratos" ){
-    prato=elemento.querySelector("h2").innerHTML;
-   } else if (selecao==="bebidas" ){ 
-    bebida=elemento.querySelector("h2").innerHTML;
-   }  else{
-    sobremesa=elemento.querySelector("h2").innerHTML;
-   }
-   pedido();
+    if (selecao==="pratos" ){
+        prato=elemento.querySelector("h2").innerHTML;
+       /* let preco1=elemento.querySelector("h4").innerHTML;*/
+       } else if (selecao==="bebidas" ){ 
+        bebida=elemento.querySelector("h2").innerHTML;
+       /* let preco2=elemento.querySelector("h4".innerHTML)*/
+       }  else{
+        sobremesa=elemento.querySelector("h2").innerHTML;
+        /*let preco3=elemento.querySelector("h4").innerHTML;*/
+       }
+       pedido();
+      /* console.log( preco1 + preco2 + preco3);*/
 } 
 
 function addicone(elemento, selecao){
@@ -26,16 +32,18 @@ function addicone(elemento, selecao){
         click.classList.remove("verdinho");
    }
    icone.classList.add("verdinho");
-}
-
+}/*
+let preco1=null;
+let preco2=null;
+let preco3=null;*/
 let prato=null;
 let bebida=null;
 let sobremesa=null;
 
 function pedido(){
-    /*console.log(sobremesa);
+    console.log(sobremesa);
     console.log(bebida);
-    console.log(prato);*/
+    console.log(prato);
    if ( prato !== null && bebida !== null && sobremesa !== null){ 
     const finalizar = document.querySelector(".confirme");
     finalizar.innerHTML= "Fechar Pedido";
@@ -44,23 +52,30 @@ function pedido(){
     
 }
 
+
+let final= prato + bebida + sobremesa;
+console.log(final);
+
 function finalizarpedido(elemento){
     if ( prato !== null && bebida !== null && sobremesa !== null){
     
-    let body2=document.querySelector(".corpo");
-    body2.classList.add(".fundo");
+   /* let body2=document.querySelector(".bodyalternativo");
+    body2.classList.add("fundo");
+    document.querySelector(".corpo").classList.add("fixo");*/
     
-   /* let teste=document.querySelector(".top");
-    console.log(teste);
+
+    let final= prato + bebida + sobremesa;
+    console.log(final);
     
-    let finalizando = document.querySelector("button");
-    console.log(finalizando);
-    elemento.classList.add("fundo");
+    
+    painel.classList.remove("escondido"); 
+    
+    
+    let linkwpp =document.querySelector(".botao1");
 
-    teste.classList.add("fundo");*/
-   
+    
 
-   /* finalizando.classList.add("bodyfinal");
-    finalizando.classList.add("painel");*/
+
+    
     }
 }

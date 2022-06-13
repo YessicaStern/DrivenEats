@@ -145,24 +145,85 @@ img{
 }
 
 .fundo{
-
-    width: 1000px;
-    height: 10000px;
-    z-index: 10;
     background-color: rgba(255, 255, 255, 0.9);
+    z-index: 3;
     position: fixed;
     top:0;
-    left: 0;
-    display: none;
+    width: 500px;
+    height: 900px;
 }
 
-.bodyalternativo{
-    width: 1000px;
-    height: 10000px;
-    z-index: 10;
+.fixo{
     position: fixed;
-    top:0;
-    left: 0;
+    top: 0;
+    width: 414px;
+}
+
+.painel{
+    position: fixed;
+    z-index: 20;
+    width: 377px;
+    height: 353px;
+    background-color:  #50D074;
+    border-radius: 9px;
+    padding: 23px;
+    top:25%;
+  
+}
+.painel h5{
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.painel h6 ,.painel h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700; 
+}
+.painel h2{
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.painel h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.painel button{
+    width: 329px;
+    height: 52px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #50D074;
+}
+.botao1{
+    background-color: white;
+    color:#50D074;
+    margin-top: 15px;
+}
+.painel .botao2{
+    background-color: #50D074 ;
+    color: white;
+    padding-top: 10px;
+}
+.escondido{
     display: none;
 }
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700; 
+    color:#FFFFFF  ;
+    padding-top: 20px;
+}
+
 /*sombra notopo e quando selecionar o item*/
