@@ -144,4 +144,25 @@ img{
     line-height: 23px;
 }
 
+.fundo{
+
+    width: 1000px;
+    height: 10000px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top:0;
+    left: 0;
+    display: none;
+}
+
+.bodyalternativo{
+    width: 1000px;
+    height: 10000px;
+    z-index: 10;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: none;
+}
 /*sombra notopo e quando selecionar o item*/
